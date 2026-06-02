@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>The Vault | Premium Drop</title>
+        <link rel="stylesheet" href="Style.css">
+    </head>
+    <body>
+        <header class="site-header">
+            <div class="header-container">
+                <a href="index.html" class="logo">THE VAULT<span class="logo-sub">RELEASES</span></a>
+                <nav class="site-nav" aria-label="Main navigation">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="release.html" class="nav-link active">Release</a>
+                    <a href="about.html" class="nav-link">About</a>
+                </nav>
+                <button class="cart-trigger" id="cart-icon-btn">
+                    <span>VAULT CART</span>
+                    <span class="cart-badge" id="cart-count-badge">0</span>
+                </button>
+            </div>
+        </header>
+
+        <main>
+            <section class="product-drop" aria-label="Featured Snkr Drop">
+                <div class="product-container">
+                    <div class="product-gallery">
+                        <div class="badge-live">LIVE DROP</div>
+                        <img src="root/3JSrender.png" alt="Air Jordan 1 - Vault Edition" class="product-image" loading="eager">
+                    </div>
+
+                    <article class="product-details">
+                        <header class="product-header">
+                            <p class="brand-tag">3JSTUDIO EXCLUSIVE</p>
+                            <h1 class="product-title">Air Jordan 1 3JS</h1>
+                            <p class="product-price">$190.00</p>
+                        </header>
+
+                        <div class="countdown-box">
+                            <p class="countdown-label">NEXT DROP IN:</p>
+                            <div class="timer-display">
+                                <span id="timer-days">00</span>:
+                                <span id="timer-hours">00</span>:
+                                <span id="timer-minutes">00</span>:
+                                <span id="timer-seconds">00</span>
+                            </div>
+                        </div>
+
+                        <div class="variant-selector">
+                            <p class="selector-label">SELECT SIZE (US MENS)</p>
+                            <div class="size-grid">
+                                <button type="button" class="size-chip" data-size="8">8</button>
+                                <button type="button" class="size-chip" data-size="9">9</button>
+                                <button type="button" class="size-chip" data-size="10">10</button>
+                                <button type="button" class="size-chip" data-size="11">11</button>
+                                <button type="button" class="size-chip" data-size="12">12</button>
+                            </div>
+                        </div>
+
+                        <div class="action-area">
+                            <button id="add-to-cart-btn" class="btn-primary" disabled>
+                                <span class="btn-text">LOCKED UNTIL DROP</span>
+                            </button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+
+        <div id="side-cart-drawer" class="cart-drawer" aria-hidden="true">
+            <div class="drawer-overlay" id="drawer-overlay-close"></div>
+            <div class="drawer-content">
+                <header class="drawer-header">
+                    <h2>YOUR CART</h2>
+                    <button id="drawer-close-btn" class="btn-close" aria-label="Close cart">&times;</button>
+                </header>
+
+                <div id="cart-items-container" class="drawer-body">
+                    <p class="empty-cart-msg">Your vault is currently empty</p>
+                </div>
+
+                <footer class="drawer-footer">
+                    <div class="summary-row">
+                        <span>SUBTOTAL</span>
+                        <span id="cart-subtotal-display">$0.00</span>
+                    </div>
+                    <button class="btn-primary btn-checkout" disabled>PROCEED TO CHECKOUT</button>
+                </footer>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
