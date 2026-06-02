@@ -91,7 +91,7 @@ addToCartBtn.addEventListener('click', () => {
     cartSubtotalDisplay.textContent =`$${computedSubtotal.toFixed(2)}`;
     cartItemsContainer.innerHTML = `<div style="display: flex; gap: 1rem; align-items: center; border-bottom: 1px solid var(--border-color); padding-bottom: 1rem;">
       <div style="width: 70px; height: 70px; background-color: var(--bg-primary); border-radius: var(--radius-sm); overflow:hidden;">
-        <img src="root/3JSrender.png" style="width:100%; height:100%; object-fit:cover;">
+        <img src="3JSrender.png" style="width:100%; height:100%; object-fit:cover;">
       </div>
       <div>
         <h4 style="font-size: 0.95rem; font-weight: 800;">Air Jordan 1 "The Vault"</h4>
